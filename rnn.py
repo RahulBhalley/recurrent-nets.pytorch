@@ -23,8 +23,9 @@ class RNN(nn.Module):
     Note that the `hidden_size` is same for all layers.
     
     TODO as follows:
-    - Add sequence of inputs producing sequence of corresponding
-      outputs after forward pass. 
+      - Add sequence of inputs producing sequence of corresponding
+        outputs after forward pass.
+      - Make this RNN bidirectional.
     """
     def __init__(self, input_size, hidden_size, output_size, num_layers=1, bidirectional=False):
         super(RNN, self).__init__()
@@ -38,7 +39,7 @@ class RNN(nn.Module):
         self.ih = []    # input to hidden (all) like skip connections
         self.hh = []    # current hidden to next layer hidden
         self._hh = []   # previous in time hidden to current hidden
-        if bidirectional:
+        if bidirectional:   # TODO
             self.hh_ = []   # future time hidden to current hidden
         self.ho = []    # all hidden layers to output connections
 

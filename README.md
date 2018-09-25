@@ -1,5 +1,5 @@
-# RNN-Variants-in-PyTorch
-RNN variants implemented from scratch with PyTorch
+# Various Recurrent Networks
+This repository is concerned with implementing various kinds of RNNs nearly from scratch with `nn.Linear` in PyTorch.
 
 **TODO**
 - Long-Short Term Memory

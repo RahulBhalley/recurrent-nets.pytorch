@@ -1,4 +1,4 @@
-# RNNs in PyTorch 🔥
+# Recurrent Nets in PyTorch 🔥
 This repository is concerned with implementing various kinds of RNNs nearly from scratch with `nn.Linear` module in PyTorch.
 
 ✔️
